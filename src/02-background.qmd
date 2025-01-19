@@ -1,0 +1,43 @@
+## Background
+
+<hr class="hr-blue">
+
+<br>
+<br>
+
+:::{style="font-size: 150%;"}
+<!-- https://github.com/quarto-dev/quarto-cli/issues/3973 -->
+```{mermaid}
+%%| label: fig-pam-arch1
+%%| fig-align: center
+%%| fig-cap: "Privileged Access Management Architecture"
+%%| file: /src/diagrams/01-pam-arch.mmd
+```
+:::
+
+## Background
+
+<hr class="hr-blue">
+
+<br>
+<br>
+
+:::{style="font-size: 150%;"}
+<!-- https://github.com/quarto-dev/quarto-cli/issues/3973 -->
+```{mermaid}
+%%| label: fig-pam-arch2
+%%| fig-align: center
+%%| fig-cap: "Privileged Access Management Architecture"
+%%| file: /src/diagrams/02-pam-arch.mmd
+```
+:::
+
+## Background
+
+<hr class="hr-blue">
+
+:::{style="font-size: 150%;"}
+<!-- https://blog.cloudsigma.com/how-to-build-robust-security-measures-to-protect-your-servers/ -->
+<!-- https://www.cloudpanel.io/blog/what-are-ssh-keys/ -->
+![SSH architectrure](/src/images/ssh-arch.svg){#fig-ssh-arch}
+:::

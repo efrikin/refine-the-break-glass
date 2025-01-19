@@ -1,0 +1,46 @@
+##
+
+:::{layout="[ 80, 20 ]"}
+
+::::{#first-column}
+![](/src/images/hands.png){fig-align="center" width=100}
+::::
+
+::::{#second-column}
+
+:::::{.qa-smaller}
+
+::::::{layout-nrow=2}
+
+{{< qrcode https://TODO width=210 height=210 colorDark='#3976B3' >}} \ [Slides]{style="color:#3976B3;font-size:0.8em;"}
+
+{{< qrcode https://blog.evgenii.us/RFDs/0001/ width=210 height=210 colorDark='red' >}} \ [B-Glass RFD]{style="color:red;font-size:0.8em;"}
+
+{{< qrcode https://makrushin.com width=210 height=210 colorDark='green' >}} \ [Denis's blog]{style="color:green;font-size:0.8em;"}
+
+{{< qrcode https://TODO width=210 height=210 colorDark='#3976B3' >}} \ [Slides Code]{style="color:#3976B3;font-size:0.8em;"}
+
+{{< qrcode https://https://github.com/efrikin/ssh-break-glass width=210 height=210 colorDark='red' >}} \ [B-Glass Code]{style="color:red;font-size:0.8em;"}
+
+{{< qrcode https://blog.evgenii.us width=210 height=210 colorDark='green' >}} \ [Evgenii's blog]{style="color:green;font-size:0.8em;"}
+
+::::::
+:::::
+::::
+
+:::
+
+##
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+:::{.r-fit-text}
+[THANK YOU FOR YOUR ATTENTION!]{style="color:red;"}
+:::
+

@@ -1,0 +1,38 @@
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'darkMode': 'true',
+      'primaryColor': '#BB2528',
+      'primaryTextColor': '#fff',
+      'primaryBorderColor': '#7C0000',
+      'lineColor': '#F8B229',
+      'secondaryColor': '#006100',
+      'tertiaryColor': '#194a8d',
+      'fontSize': '30px'
+    },
+    "flowchart" : { 'curve' : 'stepBefore', 'defaultRenderer': 'elk' }
+  }
+}%%
+flowchart LR
+    subgraph sshd_p[sshd process]
+        direction TB
+        sshd("sshd") ==> |Look up user|libnss(NSS)
+        subgraph libnss[NSS]
+            direction RL
+            nss{{"libs"}}
+        end
+    end
+    %% subgraph nss_config[NSS config]
+        %% direction TB
+        cfg{{"/etc/nsswitch.conf"}} ==> libnss
+    %% end
+    subgraph sources[Data Sources]
+        nss ==> passwd ==> pwd_src(files<br>systemd)
+        nss ==> group ==> grp_src(files)
+        nss ==> networks ==> net_src(files<br>dns)
+        nss ==> etc ==> etc.
+    end
+    libnss ==> |Response|sshd
+    classDef nss fill:#0f9d58;
+    class libnss nss

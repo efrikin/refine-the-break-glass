@@ -1,0 +1,30 @@
+## Mission Of Presentation
+
+<hr class="hr-blue">
+
+<br>
+<br>
+<br>
+
+:::: {layout="[ 60, 40 ]"}
+
+::: {#first-column}
+
+::: {.custom-smaller}
+
+<br>
+<br>
+<br>
+
+Conference is hope that good idea in head's speaker(s) can transform to list of
+idea(s) or action(s) in your head -- Unnamed speaker
+
+:::
+
+:::
+
+::: {#second-column}
+![Démosthène (384-322 avant J.C.) prononçant un discours contre Philippe de Macédoine. Gravure sur bois, 1882.](/src/images/orator.jpg){fig-align="center" #fig-orator}
+:::
+
+::::

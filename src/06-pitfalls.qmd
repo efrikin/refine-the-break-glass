@@ -1,0 +1,173 @@
+##
+
+![](/src/images/sshd-pam-nss-meme.png){fig-align="center" #fig-sshd-pam-nss-meme}
+
+## Pitfalls
+
+<hr class="hr-blue">
+
+> The getpwnam() function returns a pointer to a structure containing the
+broken-out fields of the record in the password database (e.g., the  local
+password file /etc/passwd, NIS, and LDAP) that matches the username name.
+[^pwd-struct]
+
+[^pwd-struct]: man 3 getpwnam
+
+```c
+struct passwd {
+    char   *pw_name;       /* username */
+    char   *pw_passwd;     /* user password */
+    uid_t   pw_uid;        /* user ID */
+    gid_t   pw_gid;        /* group ID */
+    char   *pw_gecos;      /* user information */
+    char   *pw_dir;        /* home directory */
+    char   *pw_shell;      /* shell program */
+;
+
+enum nss_status_nss_getpwnam_r (const char *name, struct passwd *p, char *buffer,
+                         size_t buflen, int *errnop) {
+...
+};
+```
+
+## Pitfalls
+
+<hr class="hr-blue">
+
+:::{style="font-size: 150%;"}
+![NSS architecture](/src/images/nss-arch.png){fig-align="center" #fig-nss-arch width=85%}
+:::
+
+## Pitfalls
+
+<hr class="hr-blue">
+
+<br>
+
+::: {.r-fit-text}
+
+```bash
+$ id test123321
+uid=61100(test123321) gid=61100(test123321) groups=61100(test123321)
+
+$ id test567765
+uid=60599(test567765) gid=60599(test567765) groups=60599(test567765)
+
+$ id test890098
+uid=61053(test890098) gid=61053(test890098) groups=61053(test890098)
+```
+
+<br>
+
+```bash
+$ getent passwd root
+root:x:0:0:SuperUser:/root:/bin/bash
+
+$ getent passwd test890098
+test890098:!:61053:61053:tmpuser:/home/test890098:/bin/bash
+```
+
+:::
+
+## Pitfalls
+
+<hr class="hr-blue">
+
+<br>
+<br>
+
+> `$SYSTEMD_EXEC_PID` \
+   The PID of the unit process (e.g. process invoked by ExecStart=). [The child
+   process can use this information to determine whether the process is
+   directly invoked by the service manager or indirectly as a child of another
+   process by comparing this value with the current PID]{style="color:red;"}
+   (similarly to the scheme used in sd_listen_fds(3) with \$LISTEN_PID and
+   \$LISTEN_FDS). \
+   Added in version 248. [^systemd-exec-pid]
+
+## Pitfalls
+
+<hr class="hr-blue">
+
+<br>
+<br>
+
+- Get `SYSTEMD_EXEC_PID` value
+- Get process name from `/proc/PID/comm`
+
+> `/proc/pid/comm (since Linux 2.6.33)` \
+  This  file  exposes  the process's comm value—that is, the command name
+  associated with the process. [^proc-pid-comm]
+
+<br>
+
+:::{.fragment}
+::::{.callout-important icon=false appearance="simple"}
+`In order to limit number of allowing username It's necessary to use prefix or
+postfix`
+::::
+:::
+
+[^proc-pid-comm]: man 5 proc_pid_comm
+
+[^systemd-exec-pid]: man 5 systemd.exe
+
+##
+
+![](/src/images/polp-meme.png){fig-align="center" #fig-polp-meme}
+
+## Pitfalls
+
+<hr class="hr-blue">
+
+> `SSH_AUTH_INFO_0`: expose authentication information to PAM.
+   The environment variable is versioned. [^ssh-auth-info]
+
+:::{.fragment}
+::::{.callout-tip icon=false appearance="simple"}
+:::::{.r-fit-text}
+Type: ssh-ed25519-cert-v01@openssh.com user certificate \
+Public key: ED25519-CERT SHA256:XoLe... \
+Signing CA: ED25519 SHA256:2whaY... (using ssh-ed25519) \
+[Key ID: "ssh_v1:dev:users"]{style="color:red;"} \
+Serial: 1 \
+Valid: from 2024-12-25T19:06:42 to 2024-12-25T20:07:12 \
+[Principals: \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;test.brkgl2s]{style="color:red;"} \
+Critical Options: (none) \
+Extensions: \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;permit-pty \
+:::::
+::::
+:::
+
+[^ssh-auth-info]: [openssh-portable/auth-pam.c](https://github.com/openssh/openssh-portable/blob/953fa5b59afb04c3c74ed82d7bace65c13cd8baa/auth-pam.c#L778-L796)
+
+## Pitfalls
+
+<hr class="hr-blue">
+
+<br>
+<br>
+
+:::{.r-fit-text}
+[resource_type]{style="color:green;"}:[environment]{style="color:yellow;"}:[sudo group]{style="color:red;"}
+
+&nbsp;&nbsp;&nbsp;&nbsp;[ssh_v1]{style="color:green;"}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[dev]{style="color:yellow;"}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[users]{style="color:red;"}
+:::
+
+<br>
+<br>
+
+:::{.callout-tip icon=false appearance="simple"}
+The `Key ID` is logged by the SSH server and can be useful for auditing
+:::
+
+:::aside
+Colon (`:`) is used as delimiter between different fields
+
+Underline (`_`) is used as delimiter between field type and its argument
+:::
+

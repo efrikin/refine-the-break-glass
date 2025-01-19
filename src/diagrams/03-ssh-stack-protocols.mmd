@@ -1,0 +1,33 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '36px'}}}%%
+block-beta
+    columns 10
+
+    block:SSH_p:10
+        ssh_auth_p["SSH User Authentication Protocol"]
+        ssh_conn_p["SSH Connection Protocol"]
+    end
+
+    block:SSH_t:10
+        ssh_transport_p["SSH Transport Layer Protocol"]
+    end
+
+    block:TCP:10
+        tcp["TCP"]
+    end
+
+    block:IP:10
+        ip["IP"]
+    end
+
+    style SSH_p fill:#ccccff, stroke-width:0px
+    style ssh_conn_p fill:#f5b7b1, stroke-width:0px
+    style ssh_auth_p fill: #d7bde2, stroke-width:0px
+
+    style SSH_t fill:#d4e6f1, stroke:#000,stroke-width:1px
+    style ssh_transport_p fill:#d4e6f1, stroke-width:0px
+
+    style TCP fill:#fcf3cf, stroke:#000,stroke-width:1px
+    style tcp fill:#fcf3cf, stroke-width:0px
+
+    style IP fill:#d4efdf, stroke:#000,stroke-width:1px
+    style ip fill:#d4efdf, stroke-width:0px

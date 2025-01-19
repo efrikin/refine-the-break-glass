@@ -1,0 +1,46 @@
+%%{init: {
+    'theme': 'base',
+    'themeVariables': {
+      'darkMode': 'true',
+      'primaryColor': '#BB2528',
+      'primaryTextColor': '#fff',
+      'primaryBorderColor': '#7C0000',
+      'lineColor': '#F8B229',
+      'secondaryColor': '#006100',
+      'tertiaryColor': '#194a8d',
+      'fontSize': '32px'
+    },
+    "flowchart" : { 'curve' : 'stepBefore', 'defaultRenderer': 'elk' }
+  }
+}%%
+flowchart LR
+    subgraph sshd_p[sshd process]
+        direction TB
+        sshd("sshd") ======> |If user exist <br>and<br> UsePAM enabled|libpam(PAM)
+        subgraph libnss[NSS]
+            direction RL
+            nss{{"libs"}}
+        end
+        subgraph libpam[PAM]
+            direction RL
+            pam{{"libs"}}
+        end
+    end
+    %% subgraph pamcfg[PAM configs]
+        %% direction TB
+        cfg{{"/etc/pam.d/*"}} ==> libpam
+    %% end
+
+    subgraph modules[PAM modules]
+        pam ==> account
+        pam ==> authentication
+        pam ==> password
+        pam ==> session
+    end
+    libnss <==> |Request<br>Response|sshd
+    libpam ==> |Response|sshd
+
+    classDef pam fill:#0f9d58;
+    classDef nss fill:#7c3a95;
+    class libpam pam
+    class libnss nss

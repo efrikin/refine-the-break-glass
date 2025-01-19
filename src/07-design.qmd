@@ -1,0 +1,13 @@
+## Design
+
+<hr class="hr-blue">
+
+<br>
+
+:::{style="font-size: 150%;"}
+![Break-Glass high level design](/src/images/break-glass-design.png){fig-align="center" #fig-break-glass-hl-design}
+:::
+
+::::aside
+For more details please read [RFD: Break-Glass](https://blog.evgenii.us/RFDs/0001/)
+::::

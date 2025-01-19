@@ -1,0 +1,98 @@
+## Analysis
+
+<hr class="hr-blue">
+
+<br>
+
+:::{style="font-size: 150%;"}
+```{mermaid}
+%%| label: fig-ssh-stack
+%%| fig-align: center
+%%| fig-cap: "SSH stack protocols"
+%%| file: /src/diagrams/03-ssh-stack-protocols.mmd
+```
+:::
+
+:::{.custom-smaller}
+[SSH User Authentication:]{style="color:#d7bde2;"} for client authentication to
+the server
+
+[SSH Connection:]{style="color:#f5b7b1;"} for multiplexing the
+encrypted tunnel into logical channel
+
+[SSH Transport:]{style="color:#d4e6f1;"} for authentication, confidentiality,
+integrity, compression
+:::
+
+## Analysis
+
+<hr class="hr-blue">
+
+<br>
+<br>
+
+>If the requested ['user name' does not exist, the server MAY disconnect, or MAY
+send a bogus list of acceptable authentication 'method name' values, but never
+accept any]{style="color:red;"}. This makes it possible for the server to avoid
+disclosing information on which accounts exist. In any case, if the 'user name'
+does not exist, the authentication request MUST NOT be accepted. [^rfc4252]
+
+[^rfc4252]: [RFC4252: Authentication Requests](https://datatracker.ietf.org/doc/html/rfc4252#section-5){target="_blank"}
+
+## Analysis
+
+<hr class="hr-blue">
+<br>
+
+:::{style="font-size: 150%;"}
+<!-- Mermind Live Editor make to render more better than mermind into quarto -->
+<!-- container -->
+<!-- ```{mermaid} -->
+<!-- %%| label: fig-sshd-nss -->
+<!-- %%| fig-align: center -->
+<!-- %%| fig-cap: "Conversation between SSH and NSS" -->
+<!-- %%| file: /src/diagrams/04-ssh-nss.mmd -->
+<!-- ``` -->
+![Conversation between sshd and NSS](/src/images/sshd-nss.svg){fig-align="center" #fig-sshd-nss}
+:::
+
+## Analysis
+
+<hr class="hr-blue">
+
+<br>
+
+> UsePAM Enables the Pluggable Authentication Module interface. If set to yes
+this will enable [PAM authentication using KbdInteractiveAuthentication and
+PasswordAuthentication in addition to PAM account and session module processing
+for all authentication types.]{style="color:red;"}\
+\
+Because PAM keyboard-interactive authentication usually serves an equivalent
+role to password authentication, you should disable either
+PasswordAuthentication or KbdInteractiveAuthentication. [^sshd-man]
+
+[^sshd-man]: man 5 sshd_config
+
+## Analysis
+
+<hr class="hr-blue">
+
+<br>
+<br>
+
+:::{style="font-size: 150%;"}
+<!-- Mermind Live Editor make to render more better than mermind into quarto -->
+<!-- container -->
+<!-- ```{mermaid} -->
+<!-- %%| label: fig-sshd-nss -->
+<!-- %%| fig-align: center -->
+<!-- %%| fig-cap: "Conversation between SSH and PAM" -->
+<!-- %%| file: /src/diagrams/05-ssh-pam.mmd -->
+<!-- ``` -->
+![Conversation between sshd, NSS and PAM](/src/images/sshd-pam.svg){fig-align="center" #fig-sshd-nss-pam}
+:::
+
+##
+
+![](/src/images/contribute-vs-pam.jpg){fig-align="center" #fig-contribute-vs-pam}
+
