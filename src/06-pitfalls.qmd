@@ -44,7 +44,7 @@ enum nss_status_nss_getpwnam_r (const char *name, struct passwd *p, char *buffer
 
 <br>
 
-::: {.r-fit-text}
+:::{.r-fit-text}
 
 ```bash
 $ id test123321
@@ -110,7 +110,7 @@ postfix`
 
 [^proc-pid-comm]: man 5 proc_pid_comm
 
-[^systemd-exec-pid]: man 5 systemd.exe
+[^systemd-exec-pid]: man 5 systemd.exec
 
 ##
 

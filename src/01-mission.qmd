@@ -6,11 +6,11 @@
 <br>
 <br>
 
-:::: {layout="[ 60, 40 ]"}
+::::{layout="[ 60, 40 ]"}
 
-::: {#first-column}
+:::{#first-column}
 
-::: {.custom-smaller}
+:::{.custom-smaller}
 
 <br>
 <br>

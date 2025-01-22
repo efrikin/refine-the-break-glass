@@ -37,8 +37,8 @@ access rights to bypass normal access controls. -- SSH Academy (ssh.com) [^bg]
 
 <hr class="hr-blue">
 
-::: {auto-animate=true}
-::: {style="margin-top: 163px; font-size: 1em; color: red;"}
+:::{auto-animate=true}
+:::{style="margin-top: 163px; font-size: 1em; color: red;"}
 - Server-side authorization
 - Independent on shared account(s) (sharedless)
 :::
