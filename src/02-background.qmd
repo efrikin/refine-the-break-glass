@@ -1,6 +1,6 @@
 ## Background
 
-<hr class="hr-blue">
+<hr>
 
 <br>
 <br>
@@ -17,7 +17,7 @@
 
 ## Background
 
-<hr class="hr-blue">
+<hr>
 
 <br>
 <br>
@@ -34,7 +34,7 @@
 
 ## Background
 
-<hr class="hr-blue">
+<hr>
 
 :::{style="font-size: 150%;"}
 <!-- https://blog.cloudsigma.com/how-to-build-robust-security-measures-to-protect-your-servers/ -->

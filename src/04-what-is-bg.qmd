@@ -1,20 +1,23 @@
 ## What is «Break-Glass»
 
-<hr class="hr-blue">
+<hr>
 
 <br>
 
 >Break-glass access refers to a procedure used in critical emergencies or
 exceptional cases, when a user with insufficient access is granted elevated
-access rights to bypass normal access controls. -- SSH Academy (ssh.com) [^bg]
+access rights to bypass normal access controls. -- SSH Academy (ssh.com)
 
-![Break-Glass Key](/src/images/break-glass.png){width=30% fig-align="center" #fig-bg-key}
+![Break-Glass Key](/src/images/break-glass.png){width=25% fig-align="center" #fig-bg-key}
 
-[^bg]: [What is Break-Glass Access?](https://www.ssh.com/academy/secrets-management/what-is-break-glass-access){target=_blank}
+:::aside
+For more details please read
+[What is Break-Glass Access?](https://www.ssh.com/academy/secrets-management/what-is-break-glass-access){target=_blank}
+:::
 
 ## Requirements
 
-<hr class="hr-blue">
+<hr>
 
 ::: {auto-animate=true}
 ::: {.incremental}
@@ -35,7 +38,7 @@ access rights to bypass normal access controls. -- SSH Academy (ssh.com) [^bg]
 
 ## Requirements
 
-<hr class="hr-blue">
+<hr>
 
 :::{auto-animate=true}
 :::{style="margin-top: 163px; font-size: 1em; color: red;"}

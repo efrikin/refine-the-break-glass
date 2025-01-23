@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400..900&display=swap');
 
 $colors: (
   "white": #FFFFFF,
   "black": #111111,
   "teal": #27F7F7,
-  "blue": #3976B3
+  "blue": #3976B3,
+  "red": red,
+  "green": green,
+  "yellow": yellow
 );
 
 /*-- scss:functions --*/
@@ -17,43 +21,36 @@ $colors: (
 /*-- scss:defaults --*/
 
 $body-bg: theme-color("black");
-$body-color: theme-color("teal");
-$link-color: theme-color("blue");
+$body-color: theme-color("white");
+$link-color: theme-color("yellow");
 $blue-color: theme-color("blue");
+$red-color: theme-color("red");
 
-$font-family-sans-serif: "Share Tech Mono", Consolas, monaco, monospace;
+$font-family-sans-serif: "Montserrat", Consolas, monaco, monospace;
 $presentation-font-size-root: 30px !default;
 
 /*-- scss:rules --*/
 
 hr {
-  border: 1px solid ;
+  border: 1px solid $red-color;
   border-radius: 5px;
   margin-bottom: 10px;
-}
-
-ul {
-    color: theme-color("blue");
-}
-
-.hr-blue {
-  border: 1px solid $blue-color;
 }
 
 #title-slide {
   .title {
     font-size: 2.5em;
-    color: theme-color("blue");
+    color: theme-color("white");
   }
 
   .subtitle {
     font-size: 1.2em;
-    color: theme-color("teal");
+    color: theme-color("red");
   }
 
   .quarto-title-author {
     font-size: 1.5em;
-    color: theme-color("blue");
+    color: theme-color("white");
   }
 
   .date {
@@ -63,9 +60,9 @@ ul {
 }
 
 .orbitron {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  color: theme-color("blue");
+  color: theme-color("white");
 }
 .reveal.smaller .slides section section.smallest {
   font-size: 3.7em;
@@ -74,15 +71,39 @@ ul {
 
   h1,
   h2 {
-    color: theme-color("blue");
-    font-family: "Orbitron", sans-serif;
+    color: theme-color("white");
+    font-family: "Montserrat", sans-serif;
   }
 
   p.caption {
     display: none;
+
+  }
+
+  blockquote {
+    color: theme-color("teal");
+    border-color: theme-color("teal")
+  }
+
+  .slide-menu-button {
+    display: none !important;
+  }
+  .reveal ul,
+  .reveal ol,
+  .reveal li {
+    margin-left: 6vw;
+    text-indent: 0em;
+    padding-left: 0.5em;
+    padding-right: 6vw;
+    margin-top: 0.1em !important;
+    margin-bottom: 0.1em !important;
+    font-size: 0.9em;
+  }
+
+  .slide-number > a[href*='title-slide'] {
+    display: none;
   }
 }
-
 
 .custom-smaller {
   font-size: 0.85em

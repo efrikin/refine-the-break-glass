@@ -1,6 +1,6 @@
 ## Analysis
 
-<hr class="hr-blue">
+<hr>
 
 <br>
 
@@ -26,7 +26,7 @@ integrity, compression
 
 ## Analysis
 
-<hr class="hr-blue">
+<hr>
 
 <br>
 <br>
@@ -35,13 +35,16 @@ integrity, compression
 send a bogus list of acceptable authentication 'method name' values, but never
 accept any]{style="color:red;"}. This makes it possible for the server to avoid
 disclosing information on which accounts exist. In any case, if the 'user name'
-does not exist, the authentication request MUST NOT be accepted. [^rfc4252]
+does not exist, the authentication request MUST NOT be accepted.
 
-[^rfc4252]: [RFC4252: Authentication Requests](https://datatracker.ietf.org/doc/html/rfc4252#section-5){target="_blank"}
+:::aside
+For more details please read:
+[RFC4252: Authentication Requests](https://datatracker.ietf.org/doc/html/rfc4252#section-5){target="_blank"}
+:::
 
 ## Analysis
 
-<hr class="hr-blue">
+<hr>
 <br>
 
 :::{style="font-size: 150%;"}
@@ -58,7 +61,7 @@ does not exist, the authentication request MUST NOT be accepted. [^rfc4252]
 
 ## Analysis
 
-<hr class="hr-blue">
+<hr>
 
 <br>
 
@@ -69,13 +72,15 @@ for all authentication types.]{style="color:red;"}\
 \
 Because PAM keyboard-interactive authentication usually serves an equivalent
 role to password authentication, you should disable either
-PasswordAuthentication or KbdInteractiveAuthentication. [^sshd-man]
+PasswordAuthentication or KbdInteractiveAuthentication.
 
-[^sshd-man]: man 5 sshd_config
+:::aside
+For more details please read: `man 5 sshd_config`
+:::
 
 ## Analysis
 
-<hr class="hr-blue">
+<hr>
 
 <br>
 <br>

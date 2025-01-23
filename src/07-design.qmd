@@ -1,6 +1,6 @@
 ## Design
 
-<hr class="hr-blue">
+<hr>
 
 <br>
 
@@ -9,5 +9,10 @@
 :::
 
 ::::aside
-For more details please read [RFD: Break-Glass](https://blog.evgenii.us/RFDs/0001/)
+For more details please read:
+[RFD: Break-Glass](https://blog.evgenii.us/RFDs/0001/)
 ::::
+
+## Known limitations
+
+TODO

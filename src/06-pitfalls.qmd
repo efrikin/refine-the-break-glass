@@ -4,14 +4,15 @@
 
 ## Pitfalls
 
-<hr class="hr-blue">
+<hr>
 
 > The getpwnam() function returns a pointer to a structure containing the
 broken-out fields of the record in the password database (e.g., the  local
 password file /etc/passwd, NIS, and LDAP) that matches the username name.
-[^pwd-struct]
 
-[^pwd-struct]: man 3 getpwnam
+:::aside
+For more details please read: `man 3 getpwnam`
+:::
 
 ```c
 struct passwd {
@@ -32,7 +33,7 @@ enum nss_status_nss_getpwnam_r (const char *name, struct passwd *p, char *buffer
 
 ## Pitfalls
 
-<hr class="hr-blue">
+<hr>
 
 :::{style="font-size: 150%;"}
 ![NSS architecture](/src/images/nss-arch.png){fig-align="center" #fig-nss-arch width=85%}
@@ -40,7 +41,7 @@ enum nss_status_nss_getpwnam_r (const char *name, struct passwd *p, char *buffer
 
 ## Pitfalls
 
-<hr class="hr-blue">
+<hr>
 
 <br>
 
@@ -71,7 +72,7 @@ test890098:!:61053:61053:tmpuser:/home/test890098:/bin/bash
 
 ## Pitfalls
 
-<hr class="hr-blue">
+<hr>
 
 <br>
 <br>
@@ -83,11 +84,15 @@ test890098:!:61053:61053:tmpuser:/home/test890098:/bin/bash
    process by comparing this value with the current PID]{style="color:red;"}
    (similarly to the scheme used in sd_listen_fds(3) with \$LISTEN_PID and
    \$LISTEN_FDS). \
-   Added in version 248. [^systemd-exec-pid]
+   Added in version 248.
+
+:::aside
+For more  details please read: `man 5 systemd.exec`
+:::
 
 ## Pitfalls
 
-<hr class="hr-blue">
+<hr>
 
 <br>
 <br>
@@ -97,7 +102,11 @@ test890098:!:61053:61053:tmpuser:/home/test890098:/bin/bash
 
 > `/proc/pid/comm (since Linux 2.6.33)` \
   This  file  exposes  the process's comm value—that is, the command name
-  associated with the process. [^proc-pid-comm]
+  associated with the process.
+
+:::aside
+For more details please read: `man 5 proc_pid_comm`
+:::
 
 <br>
 
@@ -118,10 +127,10 @@ postfix`
 
 ## Pitfalls
 
-<hr class="hr-blue">
+<hr>
 
 > `SSH_AUTH_INFO_0`: expose authentication information to PAM.
-   The environment variable is versioned. [^ssh-auth-info]
+   The environment variable is versioned.
 
 :::{.fragment}
 ::::{.callout-tip icon=false appearance="simple"}
@@ -141,11 +150,12 @@ Extensions: \
 ::::
 :::
 
-[^ssh-auth-info]: [openssh-portable/auth-pam.c](https://github.com/openssh/openssh-portable/blob/953fa5b59afb04c3c74ed82d7bace65c13cd8baa/auth-pam.c#L778-L796)
+For more details please read:
+[openssh-portable/auth-pam.c](https://github.com/openssh/openssh-portable/blob/953fa5b59afb04c3c74ed82d7bace65c13cd8baa/auth-pam.c#L778-L796)
 
 ## Pitfalls
 
-<hr class="hr-blue">
+<hr>
 
 <br>
 <br>
@@ -153,9 +163,9 @@ Extensions: \
 :::{.r-fit-text}
 [resource_type]{style="color:green;"}:[environment]{style="color:yellow;"}:[sudo group]{style="color:red;"}
 
-&nbsp;&nbsp;&nbsp;&nbsp;[ssh_v1]{style="color:green;"}
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[dev]{style="color:yellow;"}
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[users]{style="color:red;"}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ssh_v1]{style="color:green;"}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[dev]{style="color:yellow;"}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[users]{style="color:red;"}
 :::
 
 <br>

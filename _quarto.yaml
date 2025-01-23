@@ -5,6 +5,7 @@ project:
     port: 6411
 format:
   revealjs:
+    progress: false
     slide-number: true
     mermaid:
       theme: dark

@@ -1,7 +1,7 @@
 ---
 pagetitle: phd
 title:  Refine<br>the<br>«Break-Glass»
-subtitle: disaster recovery mechanism upgrading
+subtitle: upgrading disaster recovery mechanism
 author:
   - name: Evgenii Frikin
     email: speaker@evgenii.us
@@ -28,4 +28,3 @@ code-line-numbers: false
 {{< include src/07-design.qmd >}}
 {{< include src/08-qa-thx.qmd >}}
 {{< include src/_00-copyperms.qmd >}}
-
