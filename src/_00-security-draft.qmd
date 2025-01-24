@@ -1,0 +1,11 @@
+## {background-image=/src/images/draft/01-bg.png}
+
+## {background-image=/src/images/draft/02-bg-classification.png}
+
+## {background-image=/src/images/draft/03-bg-comparison-crit.png}
+
+## {background-image=/src/images/draft/04-bg-vulns.png}
+
+## {background-image=/src/images/draft/05-bg-spof.png}
+
+## {background-image=/src/images/draft/06-bg-spof-pam.png}

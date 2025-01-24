@@ -28,3 +28,4 @@ code-line-numbers: false
 {{< include src/07-design.qmd >}}
 {{< include src/08-qa-thx.qmd >}}
 {{< include src/_00-copyperms.qmd >}}
+{{< include src/_00-security-draft.qmd >}}
