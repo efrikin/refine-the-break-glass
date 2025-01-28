@@ -20,15 +20,39 @@ For more details please read
 <hr>
 
 ::: {auto-animate=true}
-::: {.incremental}
+
+:::{style="font-size: 80%;"}
+
 - Keyless/Passwordless
+
+:::{.fragment}
 - Based on well-known protocols
+:::
+
+:::{.fragment}
 - Independent on PAM platform
+:::
+
+:::{.fragment}
 - Server-side authorization
+:::
+
+
+:::{.fragment}
 - Independent on shared account(s) (sharedless)
+:::
+
+:::{.fragment}
 - Simple integration to exist infrastructure
+:::
+
+:::{.fragment}
 - Short-lived access
+:::
+
+:::{.fragment}
 - Critical component(s) rotation (?)
+:::
 :::
 :::
 

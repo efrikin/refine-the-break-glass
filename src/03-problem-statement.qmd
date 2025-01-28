@@ -17,7 +17,7 @@ many times more obsolete authorized keys than they have employees. Worse,
 authorized keys generally grant command-line shell access, which in itself is
 often considered privileged. We have found that in many organizations [about 10%
 of the authorized keys grant root or administrator access. SSH keys never
-expire.]{style="color:red;"}  -- Tatu Ylonen [^tatu]
+expire.]{style="color:red;"}  -- Tatu Ylonen
 :::
 
 :::aside

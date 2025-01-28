@@ -117,10 +117,6 @@ postfix`
 ::::
 :::
 
-[^proc-pid-comm]: man 5 proc_pid_comm
-
-[^systemd-exec-pid]: man 5 systemd.exec
-
 ##
 
 ![](/src/images/polp-meme.png){fig-align="center" #fig-polp-meme}

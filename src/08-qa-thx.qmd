@@ -3,7 +3,11 @@
 :::{layout="[ 80, 20 ]"}
 
 ::::{#first-column}
-![](/src/images/hands.png){fig-align="center" width=100}
+:::::{style="font-size: 175%;"}
+::::::{.r-stack}
+[THANK YOU!]{style="color:red;"}
+::::::
+:::::
 ::::
 
 ::::{#second-column}
@@ -12,35 +16,21 @@
 
 ::::::{layout-nrow=2}
 
-{{< qrcode https://TODO width=210 height=210 colorDark='#3976B3' >}} \ [Slides](https://TODO){style="color:#3976B3;font-size:0.8em;"}
+{{< qrcode https://TODO width=250 height=250 colorDark='#3976B3' >}} \ [Slides](https://TODO){style="color:#3976B3;font-size:1.1em;"}
 
-{{< qrcode https://blog.evgenii.us/RFDs/0001/ width=210 height=210 colorDark='red' >}} \ [B-Glass RFD](https://blog.evgenii.us/RFDs/0001/ ){style="color:red;font-size:0.8em;"}
+{{< qrcode https://blog.evgenii.us/RFDs/0001/ width=250 height=250 colorDark='red' >}} \ [B-Glass RFD](https://blog.evgenii.us/RFDs/0001/ ){style="color:red;font-size:1.1em;"}
 
-{{< qrcode https://makrushin.com width=210 height=210 colorDark='green' >}} \ [Denis's blog](https://makrushin.com){style="color:green;font-size:0.8em;"}
+{{< qrcode https://makrushin.com width=250 height=250 colorDark='green' >}} \ [Denis's blog](https://makrushin.com){style="color:green;font-size:1.1em;"}
 
-{{< qrcode https://TODO width=210 height=210 colorDark='#3976B3' >}} \ [Slides Code](https://TODO){style="color:#3976B3;font-size:0.8em;"}
+{{< qrcode https://TODO width=250 height=250 colorDark='#3976B3' >}} \ [Slides Code](https://TODO){style="color:#3976B3;font-size:1.1em;"}
 
-{{< qrcode https://github.com/efrikin/ssh-break-glass width=210 height=210 colorDark='red' >}} \ [B-Glass Code](https://github.com/efrikin/ssh-break-glass){style="color:red;font-size:0.8em;"}
+{{< qrcode https://github.com/efrikin/ssh-break-glass width=250 height=250 colorDark='red' >}} \ [B-Glass Code](https://github.com/efrikin/ssh-break-glass){style="color:red;font-size:1.1em;"}
 
-{{< qrcode https://blog.evgenii.us width=210 height=210 colorDark='green' >}} \ [Evgenii's blog](https://blog.evgenii.us){style="color:green;font-size:0.8em;"}
+{{< qrcode https://blog.evgenii.us width=250 height=250 colorDark='green' >}} \ [Evgenii's blog](https://blog.evgenii.us){style="color:green;font-size:1.1em;"}
 
 ::::::
 :::::
 ::::
 
-:::
-
-##
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-:::{.r-fit-text}
-[THANK YOU FOR YOUR ATTENTION!]{style="color:red;"}
 :::
 
