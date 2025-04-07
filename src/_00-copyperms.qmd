@@ -4,8 +4,6 @@
 
 @fig-orator: [`Demosthenes`](https://www.radiofrance.fr/franceculture/podcasts/les-quadrithemes-de-charles-dantzig/comment-engueuler-son-politicien-demosthene-et-churchill-ou-engueulons-les-peuples-8086465)
 
-@fig-ssh-arch: [`SSH key authentication`](https://www.cloudpanel.io/blog/what-are-ssh-keys/)
-
 @fig-trojan: [`SpangeBob`](https://www.freeiconspng.com/img/44217)`,`
 [`SSH terminal`](https://www.kolide.com/features/device-inventory/properties/device-user-ssh-keys)`,`
 [`Trojan horse`](https://br.pinterest.com/pin/326651779245504988/)
@@ -17,6 +15,4 @@
 @fig-nss-arch: [`NSS Architecture`](https://www.researchgate.net/publication/238579389_Directory_Services_for_Linux)
 
 @fig-polp-meme: [`When devs don’t have access to production`](https://programmerhumor.io/testing-memes/when-devs-dont-have-access-to-production/)
-
-@fig-break-glass-hl-design: [`Fortanix Data Security Manager`](https://www.fortanix.com/resources/solution-briefs/fortanix-dsm-ssh-ca)
 
