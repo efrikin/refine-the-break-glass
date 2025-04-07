@@ -2,19 +2,29 @@
 
 <hr>
 
-<br>
-
-:::{style="font-size: 150%;"}
-![Break-Glass high level design](/src/images/break-glass-design.png){fig-align="center" #fig-break-glass-hl-design}
+:::{style="font-size: 100%;"}
+![Break-Glass high level design](/src/images/break-glass-design.png){fig-align="center" #fig-break-glass-hl-design width=62%}
 :::
 
-::::aside
-For more details please read:
-[RFD: Break-Glass](https://blog.evgenii.us/RFDs/0001/)
-::::
+<!-- For more details please read: [RFD: Break-Glass](https://blog.evgenii.us/RFDs/0001/) -->
+
+<!-- ## Design -->
+
+<!-- <hr> -->
+
+<!-- ```bash -->
+<!-- TODO -->
+<!-- ``` -->
 
 ## Known limitations
 
 <hr>
 
-TODO
+- only `ed25519` pubkey type is supported
+- user is assigned unique `UID/GID` each time
+- `GID` is not defined in `/etc/groups`
+- `break-glass` user is ephemeral
+- termination all the process related to the user is not implemented
+- If SSH server sends `SSH_MSG_USERAUTH_FAILURE` \
+  (e.g. during authentification) user record is not deleted
+

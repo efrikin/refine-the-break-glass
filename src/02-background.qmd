@@ -39,6 +39,6 @@
 :::{style="font-size: 150%;"}
 <!-- https://blog.cloudsigma.com/how-to-build-robust-security-measures-to-protect-your-servers/ -->
 <!-- https://www.cloudpanel.io/blog/what-are-ssh-keys/ -->
-![SSH architectrure](/src/images/ssh-arch.svg){#fig-ssh-arch}
+![SSH architectrure](/src/images/ssh-arch.png){#fig-ssh-arch width=75%}
 :::
 

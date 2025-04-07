@@ -6,19 +6,14 @@ author:
   - name: Evgenii Frikin
     email: speaker@evgenii.us
     url: https://evgenii.us
-    # affiliations:
-    #   - at company
   - name: Denis Makrushin
     email: denis@makrushin.com
     url: https://makrushin.com
-    # affiliations:
-    #   - at company
-date: 05-25-2025
+date: 05-23-2025
 date-format: long
 echo: false
 code-line-numbers: false
 ---
-
 
 {{< include src/01-mission.qmd >}}
 {{< include src/02-background.qmd >}}
