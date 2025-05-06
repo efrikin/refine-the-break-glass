@@ -1,8 +1,10 @@
-##
+## {#sshd-pam-nss-meme}
 
 ![](/src/images/sshd-pam-nss-meme.png){fig-align="center" #fig-sshd-pam-nss-meme}
 
-## Pitfalls
+# Pitfalls
+
+## getpwnam function
 
 <hr>
 
@@ -31,18 +33,17 @@ enum nss_status_nss_getpwnam_r (const char *name, struct passwd *p, char *buffer
 };
 ```
 
-## Pitfalls
+## NSS Archtecture
 
 <hr>
 
 :::{style="font-size: 150%;"}
-![NSS architecture](/src/images/nss-arch.png){fig-align="center" #fig-nss-arch width=85%}
+![](/src/images/nss-arch.png){fig-align="center" #fig-nss-arch width=62%}
 :::
 
-## Pitfalls
+##
 
-<hr>
-
+<br>
 <br>
 
 :::{.r-fit-text}
@@ -70,7 +71,7 @@ test890098:!:61053:61053:tmpuser:/home/test890098:/bin/bash
 
 :::
 
-## Pitfalls
+## systemd.exec
 
 <hr>
 
@@ -90,7 +91,7 @@ test890098:!:61053:61053:tmpuser:/home/test890098:/bin/bash
 For more  details please read: `man 5 systemd.exec`
 :::
 
-## Pitfalls
+## Getting Service Name
 
 <hr>
 
@@ -117,11 +118,11 @@ postfix`
 ::::
 :::
 
-##
+## {#polp-meme}
 
 ![](/src/images/polp-meme.png){fig-align="center" #fig-polp-meme}
 
-## Pitfalls
+## Getting Authentication Information
 
 <hr>
 
@@ -149,7 +150,7 @@ Extensions: \
 For more details please read:
 [openssh-portable/auth-pam.c](https://github.com/openssh/openssh-portable/blob/953fa5b59afb04c3c74ed82d7bace65c13cd8baa/auth-pam.c#L778-L796)
 
-## Pitfalls
+## Naming Convention
 
 <hr>
 

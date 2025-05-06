@@ -1,6 +1,6 @@
 ---
 pagetitle: phd
-title:  Refine<br>the<br>«Break-Glass»
+title: Refine the «Break-Glass»
 subtitle: upgrading disaster recovery mechanism
 author:
   - name: Evgenii Frikin
@@ -15,13 +15,13 @@ echo: false
 code-line-numbers: false
 ---
 
-{{< include src/01-mission.qmd >}}
-{{< include src/02-background.qmd >}}
-{{< include src/03-problem-statement.qmd >}}
-{{< include src/04-what-is-bg.qmd >}}
-{{< include src/05-analysis.qmd >}}
-{{< include src/06-pitfalls.qmd >}}
-{{< include src/07-design.qmd >}}
-{{< include src/08-qa-thx.qmd >}}
-{{< include src/_00-security-draft.qmd >}}
+{{< include src/01-what-is-bg.qmd >}}
+{{< include src/02-security.qmd >}}
+{{< include src/03-background.qmd >}}
+{{< include src/04-problem-statement.qmd >}}
+{{< include src/05-requirements.qmd >}}
+{{< include src/06-analysis.qmd >}}
+{{< include src/07-pitfalls.qmd >}}
+{{< include src/08-design.qmd >}}
+{{< include src/09-qa-thx.qmd >}}
 {{< include src/_00-copyperms.qmd >}}

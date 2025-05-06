@@ -1,4 +1,6 @@
-## Problem Statements
+# Problem Statements
+
+## Challenges in Managing SSH keys
 
 <hr>
 
@@ -22,16 +24,16 @@ expire.]{style="color:red;"}  -- Tatu Ylonen
 
 :::aside
 For more details please read:
-[Challenges in Managing SSH Keys – and a Call for Solutions](https://ylonen.org/papers/ssh-key-challenges.pdf){target="_blank"}
+[Challenges in Managing SSH Keys – and a Call for Solutions](https://ylonen.org/papers/ssh-key-challenges.pdf){target="_blank_"}
 :::
 
-## Problem Statements
+## Challenges in Managing SSH keys
 
 <hr>
 
 <br>
 
-:::{.custom-smaller}
+::: {.custom-smaller}
 >Historically, most organizations have [not touched the location of the
 authorized keys files.]{style="color:red;"} This means they are in each user's
 home directory, and [each user can configure additional permanent credentials
@@ -49,10 +51,10 @@ backdoor keys from casual observation.]{style="color:red;"}
 :::
 
 :::aside
-For more details please read: [How to Configure the OpenSSH Server](https://ssh.com/academy/ssh/sshd_config){target=_blank}
+For more details please read: [How to Configure the OpenSSH Server](https://ssh.com/academy/ssh/sshd_config){target=_blank_}
 :::
 
-## Problem Statements
+## SSH keys Limitation
 
 <hr>
 
@@ -60,7 +62,7 @@ For more details please read: [How to Configure the OpenSSH Server](https://ssh.
 -- Teleport Blog
 
 :::aside
-For more details please read: [SSH Certificates Security](https://goteleport.com/blog/ssh-certificates/){target=_blank}
+For more details please read: [SSH Certificates Security](https://goteleport.com/blog/ssh-certificates/){target=_blank_}
 :::
 
 :::{.incremental}
@@ -73,7 +75,7 @@ For more details please read: [SSH Certificates Security](https://goteleport.com
 - Scalability challenge related to keys
 :::
 
-##
+## {#ssh-key-mgmt-meme}
 
 ![Trojan meme](/src/images/trojan.svg){fig-align="center" #fig-trojan}
 

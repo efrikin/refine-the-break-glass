@@ -1,4 +1,6 @@
-## Analysis
+# Analysis
+
+## SSH Stack Protocols
 
 <hr>
 
@@ -6,9 +8,7 @@
 
 :::{style="font-size: 150%;"}
 ```{mermaid}
-%%| label: fig-ssh-stack
 %%| fig-align: center
-%%| fig-cap: "SSH stack protocols"
 %%| file: /src/diagrams/03-ssh-stack-protocols.mmd
 ```
 :::
@@ -24,7 +24,7 @@ encrypted tunnel into logical channel
 integrity, compression
 :::
 
-## Analysis
+## SSH Authentication Requests
 
 <hr>
 
@@ -39,27 +39,23 @@ does not exist, the authentication request MUST NOT be accepted.
 
 :::aside
 For more details please read:
-[RFC4252: Authentication Requests](https://datatracker.ietf.org/doc/html/rfc4252#section-5){target="_blank"}
+[RFC4252: Authentication Requests](https://datatracker.ietf.org/doc/html/rfc4252#section-5){target="_blank_"}
 :::
 
-## Analysis
+## Conversation Between SSH and NSS
 
 <hr>
 <br>
 
-:::{style="font-size: 150%;"}
 <!-- Mermind Live Editor make to render more better than mermind into quarto -->
 <!-- container -->
 <!-- ```{mermaid} -->
-<!-- %%| label: fig-sshd-nss -->
 <!-- %%| fig-align: center -->
-<!-- %%| fig-cap: "Conversation between SSH and NSS" -->
 <!-- %%| file: /src/diagrams/04-ssh-nss.mmd -->
 <!-- ``` -->
-![Conversation between sshd and NSS](/src/images/sshd-nss.svg){fig-align="center" #fig-sshd-nss}
-:::
+![](/src/images/sshd-nss.svg){fig-align="center" fig-align="center"}
 
-## Analysis
+## Pluggable Authentication Module
 
 <hr>
 
@@ -78,14 +74,13 @@ PasswordAuthentication or KbdInteractiveAuthentication.
 For more details please read: `man 5 sshd_config`
 :::
 
-## Analysis
+## Conversation Between sshd, NSS and PAM {style="font-size: 80%;"}
 
 <hr>
 
 <br>
 <br>
 
-:::{style="font-size: 150%;"}
 <!-- Mermind Live Editor make to render more better than mermind into quarto -->
 <!-- container -->
 <!-- ```{mermaid} -->
@@ -94,10 +89,9 @@ For more details please read: `man 5 sshd_config`
 <!-- %%| fig-cap: "Conversation between SSH and PAM" -->
 <!-- %%| file: /src/diagrams/05-ssh-pam.mmd -->
 <!-- ``` -->
-![Conversation between sshd, NSS and PAM](/src/images/sshd-pam.svg){fig-align="center" #fig-sshd-nss-pam}
-:::
+![](/src/images/sshd-pam.svg){fig-align="center"}
 
-##
+## {#contribute-vs-pam-meme}
 
 ![](/src/images/contribute-vs-pam.jpg){fig-align="center" #fig-contribute-vs-pam}
 

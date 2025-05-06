@@ -1,21 +1,7 @@
-## What is «Break-Glass»
 
-<hr>
+# Requirements
 
-<br>
-
->Break-glass access refers to a procedure used in critical emergencies or
-exceptional cases, when a user with insufficient access is granted elevated
-access rights to bypass normal access controls. -- SSH Academy (ssh.com)
-
-![Break-Glass Key](/src/images/break-glass.png){width=25% fig-align="center" #fig-bg-key}
-
-:::aside
-For more details please read
-[What is Break-Glass Access?](https://www.ssh.com/academy/secrets-management/what-is-break-glass-access){target=_blank}
-:::
-
-## Requirements
+## Main Points
 
 <hr>
 
@@ -39,7 +25,7 @@ For more details please read
 
 
 :::{.fragment}
-- Independent on shared account(s) (sharedless)
+- Independent on shared account(s) (Accountless)
 :::
 
 :::{.fragment}
@@ -51,7 +37,7 @@ For more details please read
 :::
 
 :::{.fragment}
-- Critical component(s) rotation (?)
+- Critical component(s) rotation
 :::
 :::
 :::
@@ -60,7 +46,9 @@ For more details please read
 ![](/src/images/openssh-cert-logo.svg){width=40% fig-align="center"}
 :::
 
-## Requirements
+:::
+
+## Main Points
 
 <hr>
 

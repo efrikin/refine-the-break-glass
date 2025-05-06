@@ -1,70 +1,3 @@
-## Break-Glass
-
-<hr>
-
-::::{layout="[ 60, 40 ]"}
-
-:::::{#first-column}
-
-::::::{.custom-smaller}
-
-![]()
-
-::::::
-
-:::::
-
-::::: {#second-column}
-
-::::::{.custom-smaller}
-
-Emergency:
-
-- PAM/IAM do not work
-
-:::{.fragment}
-- Server is down \
-  (DDoS or MFA doesn't work)
-:::
-
-:::{.fragment}
-- Failure of Federation Server
-:::
-
-:::{.fragment}
-- Service outage
-:::
-
-::::::
-:::::
-::::
-
-## Classification
-
-<hr>
-
-- Emergency Access Account \
-  (MS Azure, AWS, IAM)
-
-:::{.fragment}
-- Temporary Tokens/Keys \
-  (HashiCorp Vault)
-:::
-
-
-:::{.fragment}
-- Temporary Roles
-:::
-
-:::{.fragment}
-- MFA Unlock
-:::
-
-:::{.fragment}
-- Approval-Based Access \
-  (ServiceNow)
-:::
-
 ## Comparison Criteria
 
 <hr>
@@ -101,13 +34,15 @@ Emergency:
 - Security policies in Multi-Cloud environments
 :::
 
-##
+## {#bg-spof}
 
-![](/src/images/draft/05-bg-spof.png)
+![](/src/images/bg-spof.png)
 
 ## SPOF: When PAM tools fail
 
 <hr>
+
+<br>
 
 > This vulnerability involved improper management of SSH keys within PAM
 systems, which hackers exploited to gain access to cryptographic key pairs and
@@ -120,6 +55,3 @@ unauthorized access to sensitive operations within the application. This
 incident illustrates how flaws in PAM tools can create serious security risks
 if not addressed promptly -- CVE-2024-30051
 
-:::aside
-TODO link(s)
-:::
