@@ -37,13 +37,20 @@ hr {
 
 #title-slide {
   .title {
-    font-size: 2.5em;
+    font-size: 2.3em;
     color: theme-color("white");
+    text-align: left;
+
   }
 
   .subtitle {
     font-size: 1.2em;
     color: theme-color("red");
+    text-align: left;
+    bottom: unset !important;
+    right: unset !important;
+    top: 5px;
+    left: 12px;
   }
 
   .quarto-title-author {
@@ -53,6 +60,7 @@ hr {
 
   .date {
     font-size: 1.0em;
+    text-align: left;
   }
 
 }
@@ -62,9 +70,15 @@ hr {
   font-weight: 900;
   color: theme-color("white");
 }
+
 .reveal.smaller .slides section section.smallest {
   font-size: 3.7em;
 }
+
+.reveal section div.center-h {
+  text-align: justify;
+}
+
 .reveal {
 
   h1,
@@ -98,6 +112,11 @@ hr {
     margin-top: 0.1em !important;
     margin-bottom: 0.1em !important;
     font-size: 0.9em;
+    list-style-type: circle;
+  }
+
+  li::marker{
+    color: red;
   }
 
   .slide-number > a[href*='title-slide'] {
@@ -129,9 +148,10 @@ figcaption {
    text-align: center;
 }
 
-// https://github.com/jmbuhr/quarto-qrcode
-.qrcode {
-  margin-bottom: 0.3rem;
+.center-xy {
+  margin: 0;
+  position: absolute;
+  left: 22%;
 }
 
 @each $name, $color in $colors {

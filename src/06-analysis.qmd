@@ -1,19 +1,19 @@
-# Analysis
+# Analysis {background-image="themes/topic.jpg"}
 
-## SSH Stack Protocols
+## SSH Stack Protocols {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
 
 <hr>
 
 <br>
 
-:::{style="font-size: 150%;"}
+::: {style="font-size: 150%;"}
 ```{mermaid}
 %%| fig-align: center
 %%| file: /src/diagrams/03-ssh-stack-protocols.mmd
 ```
 :::
 
-:::{.custom-smaller}
+::: {.custom-smaller}
 [SSH User Authentication:]{style="color:#d7bde2;"} for client authentication to
 the server
 
@@ -24,7 +24,7 @@ encrypted tunnel into logical channel
 integrity, compression
 :::
 
-## SSH Authentication Requests
+## SSH Authentication Requests {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
 
 <hr>
 
@@ -42,7 +42,7 @@ For more details please read:
 [RFC4252: Authentication Requests](https://datatracker.ietf.org/doc/html/rfc4252#section-5){target="_blank_"}
 :::
 
-## Conversation Between SSH and NSS
+## Conversation Between SSH and NSS {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
 
 <hr>
 <br>
@@ -55,7 +55,7 @@ For more details please read:
 <!-- ``` -->
 ![](/src/images/sshd-nss.svg){fig-align="center" fig-align="center"}
 
-## Pluggable Authentication Module
+## Pluggable Authentication Module {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
 
 <hr>
 
@@ -71,10 +71,10 @@ role to password authentication, you should disable either
 PasswordAuthentication or KbdInteractiveAuthentication.
 
 :::aside
-For more details please read: `man 5 sshd_config`
+For more details please read: [man 5 sshd_config]{style="color:yellow;"}
 :::
 
-## Conversation Between sshd, NSS and PAM {style="font-size: 80%;"}
+## Conversation Between sshd, NSS and PAM {background-gradient="linear-gradient(to bottom, #00192C, #004F61)" style="font-size: 80%;"}
 
 <hr>
 
@@ -91,7 +91,7 @@ For more details please read: `man 5 sshd_config`
 <!-- ``` -->
 ![](/src/images/sshd-pam.svg){fig-align="center"}
 
-## {#contribute-vs-pam-meme}
+## {background-gradient="linear-gradient(to bottom, #00192C, #004F61)" #contribute-vs-pam-meme}
 
-![](/src/images/contribute-vs-pam.jpg){fig-align="center" #fig-contribute-vs-pam}
+![](/src/images/contribute-vs-pam.jpg){fig-align="center" #fig-contribute-vs-pam style="border:1px solid red;"}
 

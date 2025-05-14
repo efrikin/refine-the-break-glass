@@ -1,12 +1,12 @@
-# Problem Statements
+# Problem Statements {background-image="themes/topic.jpg"}
 
-## Challenges in Managing SSH keys
+## Challenges in Managing SSH keys {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
 
 <hr>
 
 <br>
 
-:::{.custom-smaller}
+::: {.custom-smaller}
 >Monitoring of the usage of the keys has revealed that typically [about 90% of
 the authorized keys are unused.]{style="color:red;"}
 That is, they are access credentials that were provisioned years ago, the need
@@ -27,7 +27,7 @@ For more details please read:
 [Challenges in Managing SSH Keys – and a Call for Solutions](https://ylonen.org/papers/ssh-key-challenges.pdf){target="_blank_"}
 :::
 
-## Challenges in Managing SSH keys
+## Challenges in Managing SSH keys {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
 
 <hr>
 
@@ -54,7 +54,7 @@ backdoor keys from casual observation.]{style="color:red;"}
 For more details please read: [How to Configure the OpenSSH Server](https://ssh.com/academy/ssh/sshd_config){target=_blank_}
 :::
 
-## SSH keys Limitation
+## SSH keys Limitation {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
 
 <hr>
 
@@ -65,7 +65,7 @@ For more details please read: [How to Configure the OpenSSH Server](https://ssh.
 For more details please read: [SSH Certificates Security](https://goteleport.com/blog/ssh-certificates/){target=_blank_}
 :::
 
-:::{.incremental}
+::: {.incremental}
 - Limited metadata
 - Managing unused keys
 - Duplicate authorized keys
@@ -75,7 +75,7 @@ For more details please read: [SSH Certificates Security](https://goteleport.com
 - Scalability challenge related to keys
 :::
 
-## {#ssh-key-mgmt-meme}
+## {background-gradient="linear-gradient(to bottom, #00192C, #004F61)" #ssh-key-mgmt-meme}
 
-![Trojan meme](/src/images/trojan.svg){fig-align="center" #fig-trojan}
+![Trojan meme](/src/images/trojan.svg){fig-align="center" #fig-trojan style="border:1px solid red;"}
 

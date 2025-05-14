@@ -1,20 +1,20 @@
-# High-Level Design
+# High-Level Design {background-image="themes/topic.jpg"}
 
-## {#bg-hld}
+## {background-gradient="linear-gradient(to bottom, #00192C, #004F61)" #bg-hld}
 
 ![](/src/images/break-glass-design.png){fig-align="center" width=70%}
 
-# Known Limitations
+# Known Limitations {background-image="themes/topic.jpg"}
 
-## Main Points
+## Main Points {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
 
 <hr>
 
-- only `ed25519` pubkey type is supported
-- user is assigned unique `UID/GID` each time
-- `GID` is not defined in `/etc/groups`
-- `break-glass` user is ephemeral
+- only [ed25519]{style="color:red;"} pubkey type is supported
+- user is assigned unique [UID/GID]{style="color:red;"} each time
+- [GID]{style="color:red;"} is not defined in [/etc/groups]{style="color:red;"}
+- [break-glass]{style="color:red;"} user is ephemeral
 - termination all the process related to the user is not implemented
-- If SSH server sends `SSH_MSG_USERAUTH_FAILURE` \
+- If SSH server sends [SSH_MSG_USERAUTH_FAILURE]{style="color:red;"} \
   (e.g. during authentification) user record is not deleted
 

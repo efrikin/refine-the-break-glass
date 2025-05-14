@@ -1,7 +1,6 @@
+# What is «Break-Glass» {background-image="themes/topic.jpg"}
 
-# What is «Break-Glass»
-
-## Break-Glass is ... {#sec-bg-is}
+## Break-Glass is ... {background-gradient="linear-gradient(to bottom, #00192C, #004F61)" #sec-bg-is}
 
 <hr>
 
@@ -18,16 +17,16 @@ For more details please read
 [What is Break-Glass Access?](https://www.ssh.com/academy/secrets-management/what-is-break-glass-access){target=_blank_}
 :::
 
-## Usage
+## Usage {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
 
 <hr>
 <br>
 
-::::{layout="[ 60, 40 ]"}
+:::: {layout="[ 60, 40 ]"}
 
-:::::{#first-column}
+::::: {#first-column}
 
-::::::{.custom-smaller}
+:::::: {.custom-smaller}
 
 ![](/src/images/bg-emergency.png)
 
@@ -43,16 +42,16 @@ Emergency:
 
 - PAM/IAM do not work
 
-:::{.fragment}
+::: {.fragment}
 - Server is down \
   (DDoS or MFA doesn't work)
 :::
 
-:::{.fragment}
+::: {.fragment}
 - Failure of Federation Server
 :::
 
-:::{.fragment}
+::: {.fragment}
 - Service outage
 :::
 
@@ -60,7 +59,7 @@ Emergency:
 :::::
 ::::
 
-## Classification
+## Classification {background-image="themes/bg2.jpg"}
 
 <hr>
 

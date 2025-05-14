@@ -1,0 +1,47 @@
+## {background-image="themes/topic.jpg"}
+
+:::: {layout="[ 6, 45, 50 ]" layout-align="center}
+
+::::: {#zero-column}
+
+:::::
+
+::::: {#first-column}
+
+:::::: {.custom-smaller}
+
+![](/src/images/efrikin.jpg){style="border:1px solid red;"}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[Evgenii Frikin]{style="font-size:1.5em;"}
+
+[Exprience:]{style="color:red;"} from IaaS to SaaS
+
+[R&D:]{style="color:red;"} Kubernetes, OpenStack
+
+[I like:]{style="color:red;"} Fedora, GitLab, Go, C
+
+[Hobby:]{style="color:red;"} long-distance running
+
+::::::
+:::::
+
+::::: {#second-column}
+
+:::::: {.custom-smaller}
+
+![](/src/images/dmakrushin.jpg){style="border:1px solid red;"}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[Denis Makrushin]{style="font-size:1.5em;"}
+
+[Mission:]{style="color:red;"} save the world and building cybersecurity solutions
+
+[R&D]{style="color:red;"}: combating ransomware at MEPhI
+
+[Hobby:]{style="color:red;"} researching threats, hunting vulns, and sharing insights
+
+::::::
+:::::
+::::
+

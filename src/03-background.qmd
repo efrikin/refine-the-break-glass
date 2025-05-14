@@ -1,6 +1,6 @@
-# Background
+# Background {background-image="themes/topic.jpg"}
 
-## Privileged Access Management Architecture {style="font-size: 80%;"}
+## Privileged Access Management Architecture {background-gradient="linear-gradient(to bottom, #00192C, #004F61)" style="font-size: 85%;"}
 
 <hr>
 
@@ -15,7 +15,7 @@
 %%| file: /src/diagrams/01-pam-arch.mmd
 ```
 
-## Privileged Access Management Architecture {style="font-size: 80%;"}
+## Privileged Access Management Architecture {background-gradient="linear-gradient(to bottom, #00192C, #004F61)" style="font-size: 85%;"}
 
 <hr>
 
@@ -29,7 +29,7 @@
 %%| file: /src/diagrams/02-pam-arch.mmd
 ```
 
-## SSH Architectrure
+## SSH Architectrure {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
 
 <hr>
 

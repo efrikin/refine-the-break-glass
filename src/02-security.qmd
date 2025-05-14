@@ -1,9 +1,9 @@
-## Comparison Criteria
+## Comparison Criteria {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
 
 <hr>
 
-:::table-grid
-:::{style="font-size: 99%;"}
+::: table-grid
+::: {style="font-size: 99%;"}
 | Access Provision Method | Security Level                            | Implementation Complexity       | Ease of Use                      | Flexebility                      | Audit Transperency             | Abuse Risk                       |
 |:-----------------------:|:-----------------------------------------:|:-------------------------------:|:--------------------------------:|:--------------------------------:|:------------------------------:|:--------------------------------:|
 | Emergency account       | [Medium]{style="color:yellow;"}           | [Low]{style="color:green;"}     | [High]{style="color:red;"}       | [Low]{style="color:green;"}      | [Medium]{style="color:yellow;"}| [High]{style="color:red;"}       |
@@ -16,29 +16,31 @@
 :::
 :::
 
-## Vulnerabilities
+## Vulnerabilities {background-image="themes/bg2.jpg"}
 
 <hr>
 
 - Weak access control
 
-:::{.fragment}
+::: {.fragment}
 - Inadequate monitoring
 :::
 
-:::{.fragment}
+::: {.fragment}
 - Single Point of Failure (SPOF)
 :::
 
-:::{.fragment}
+::: {.fragment}
 - Security policies in Multi-Cloud environments
 :::
 
-## {#bg-spof}
+## {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
+
+<br>
 
 ![](/src/images/bg-spof.png)
 
-## SPOF: When PAM tools fail
+## SPOF: When PAM tools fail {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
 
 <hr>
 

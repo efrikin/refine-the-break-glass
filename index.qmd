@@ -1,20 +1,24 @@
 ---
 pagetitle: phd
-title: Refine the «Break-Glass»
+title: <br><br><br><br>Refine the «Break-Glass»
 subtitle: upgrading disaster recovery mechanism
-author:
-  - name: Evgenii Frikin
-    email: speaker@evgenii.us
-    url: https://evgenii.us
-  - name: Denis Makrushin
-    email: denis@makrushin.com
-    url: https://makrushin.com
+title-slide-attributes:
+  data-background-image: themes/bg.jpg
+  center-title-slide: false
+# author:
+#   - name: Evgenii Frikin
+#     email: speaker@evgenii.us
+#     url: https://evgenii.us
+#   - name: Denis Makrushin
+#     email: denis@makrushin.com
+#     url: https://makrushin.com
 date: 05-23-2025
 date-format: long
 echo: false
 code-line-numbers: false
 ---
 
+{{< include src/00-about.qmd >}}
 {{< include src/01-what-is-bg.qmd >}}
 {{< include src/02-security.qmd >}}
 {{< include src/03-background.qmd >}}
