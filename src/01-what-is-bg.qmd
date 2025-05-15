@@ -40,7 +40,7 @@ For more details please read
 
 Emergency:
 
-- PAM/IAM do not work
+- PAM/IAM do not work[^pamiam]
 
 ::: {.fragment}
 - Server is down \
@@ -58,6 +58,8 @@ Emergency:
 ::::::
 :::::
 ::::
+
+[^pamiam]: Privileged Access Management/Identity and Access Management
 
 ## Classification {background-image="themes/bg2.jpg"}
 

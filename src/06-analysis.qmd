@@ -42,10 +42,12 @@ For more details please read:
 [RFC4252: Authentication Requests](https://datatracker.ietf.org/doc/html/rfc4252#section-5){target="_blank_"}
 :::
 
-## Conversation Between SSH and NSS {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
+## Conversation between SSH and NSS[^nss] {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
 
 <hr>
 <br>
+
+[^nss]: Name Service Switch
 
 <!-- Mermind Live Editor make to render more better than mermind into quarto -->
 <!-- container -->
@@ -74,12 +76,14 @@ PasswordAuthentication or KbdInteractiveAuthentication.
 For more details please read: [man 5 sshd_config]{style="color:yellow;"}
 :::
 
-## Conversation Between sshd, NSS and PAM {background-gradient="linear-gradient(to bottom, #00192C, #004F61)" style="font-size: 80%;"}
+## Conversation between sshd, NSS and PAM[^pam-module] {background-gradient="linear-gradient(to bottom, #00192C, #004F61)" style="font-size: 80%;"}
 
 <hr>
 
 <br>
 <br>
+
+[^pam-module]: [Pluggable Authentication Modules]{style="font-size:1.2em"}
 
 <!-- Mermind Live Editor make to render more better than mermind into quarto -->
 <!-- container -->

@@ -79,8 +79,11 @@ hr {
   text-align: justify;
 }
 
-.reveal {
+.reveal .slide aside .aside-footnotes {
+    font-size: 1.1em;
+}
 
+.reveal {
   h1,
   h2 {
     color: theme-color("white");
@@ -115,7 +118,7 @@ hr {
     list-style-type: circle;
   }
 
-  li::marker{
+  ul li::marker{
     color: red;
   }
 
