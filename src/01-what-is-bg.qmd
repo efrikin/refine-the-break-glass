@@ -28,7 +28,7 @@ For more details please read
 
 :::::: {.custom-smaller}
 
-![](/src/images/bg-emergency.png)
+![](/src/images/bg-emergency.png){width="90%"}
 
 ::::::
 
@@ -40,7 +40,7 @@ For more details please read
 
 Emergency:
 
-- PAM/IAM do not work[^pamiam]
+- PAM/IAM[^pamiam] do not work
 
 ::: {.fragment}
 - Server is down \
@@ -72,7 +72,6 @@ Emergency:
 - Temporary Tokens/Keys \
   (HashiCorp Vault)
 :::
-
 
 :::{.fragment}
 - Temporary Roles

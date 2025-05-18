@@ -12,16 +12,11 @@
 
 ::: {#first-column}
 
-::: {.custom-smaller}
-
-<br>
 <br>
 <br>
 
 > Conference is hope that good idea in head's speaker(s) can transform to list of
 idea(s) or action(s) in your head -- Unnamed speaker
-
-:::
 
 :::
 
@@ -31,31 +26,33 @@ idea(s) or action(s) in your head -- Unnamed speaker
 
 ::::
 
-## Thank You {background-gradient="linear-gradient(to bottom, #00192C, #004F61)" #qa}
+## Scan for more resources 👇 {background-gradient="linear-gradient(to bottom, #00192C, #004F61)" #qa}
 
 <hr>
 
 ::: {layout-nrow=2}
 
-{{< qrcode https://TODO width=250 height=250 colorDark='#3976B3' >}} \ [Slides](https://TODO){style="color:#3976B3;font-size:1.1em;"}
+{{< qrcode https://github.com/makrushind/refine-the-break-glass/ width=250 height=250 colorDark='#051ff9' >}} \ [Slides Code](https://github.com/makrushind/refine-the-break-glass/){style="color:white;font-size:1.1em;"}
 
-{{< qrcode https://blog.evgenii.us/RFDs/0001/ width=250 height=250 colorDark='red' >}} \ [B-Glass RFD](https://blog.evgenii.us/RFDs/0001/ ){style="color:red;font-size:1.1em;"}
+{{< qrcode https://blog.evgenii.us/RFDs/0001/ width=250 height=250 colorDark='red' >}} \ [B-Glass RFD](https://blog.evgenii.us/RFDs/0001/ ){style="color:white;font-size:1.1em;"}
 
-{{< qrcode https://makrushin.com width=250 height=250 colorDark='green' >}} \ [Denis's blog](https://makrushin.com){style="color:green;font-size:1.1em;"}
+{{< qrcode https://makrushin.com width=250 height=250 colorDark='green' >}} \ [Denis's blog](https://makrushin.com){style="color:white;font-size:1.1em;"}
 
-{{< qrcode https://TODO width=250 height=250 colorDark='#3976B3' >}} \ [Slides Code](https://TODO){style="color:#3976B3;font-size:1.1em;"}
+{{< qrcode https://makrushind.github.io/refine-the-break-glass/ width=250 height=250 colorDark='#051ff9' >}} \ [Slides](https://makrushind.github.io/refine-the-break-glass/){style="color:white;font-size:1.1em;"}
 
-{{< qrcode https://github.com/efrikin/ssh-break-glass width=250 height=250 colorDark='red' >}} \ [B-Glass Code](https://github.com/efrikin/ssh-break-glass){style="color:red;font-size:1.1em;"}
+{{< qrcode https://github.com/efrikin/ssh-break-glass width=250 height=250 colorDark='red' >}} \ [B-Glass Code](https://github.com/efrikin/ssh-break-glass){style="color:white;font-size:1.1em;"}
 
-{{< qrcode https://blog.evgenii.us width=250 height=250 colorDark='green' >}} \ [Evgenii's blog](https://blog.evgenii.us){style="color:green;font-size:1.1em;"}
+{{< qrcode https://blog.evgenii.us width=250 height=250 colorDark='green' >}} \ [Evgenii's blog](https://blog.evgenii.us){style="color:white;font-size:1.1em;"}
 
 :::
 
-## Survey {background-image="themes/topic.jpg"}
+## Thank you {background-image="themes/bg.jpg"}
 
 <hr>
 
-::: {.center-xy}
-{{< qrcode https://oprosso.ru/p/fd324266958a4462bef62cc3326e5704 width=600 height=600 colorDark='red' >}}
-:::
+<br>
+<br>
+<br>
+
+{{< qrcode https://oprosso.ru/p/fd324266958a4462bef62cc3326e5704 width=350 height=350 colorDark='#051ff9' >}} \ [Give us your feedback](https://oprosso.ru/p/fd324266958a4462bef62cc3326e5704){style="color:white;font-size:1.0em;"}
 

@@ -1,6 +1,6 @@
 ## {background-image="themes/topic.jpg"}
 
-:::: {layout="[ 6, 45, 50 ]" layout-align="center}
+:::: {layout="[ 6, 45, 50 ]" layout-align="center"}
 
 ::::: {#zero-column}
 

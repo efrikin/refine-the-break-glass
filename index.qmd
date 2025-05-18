@@ -5,6 +5,8 @@ subtitle: upgrading disaster recovery mechanism
 title-slide-attributes:
   data-background-image: themes/bg.jpg
   center-title-slide: false
+  pdf-max-pages-per-slide: 1
+  pdf-separate-fragments: true
 # author:
 #   - name: Evgenii Frikin
 #     email: speaker@evgenii.us

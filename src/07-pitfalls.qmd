@@ -37,9 +37,7 @@ enum nss_status_nss_getpwnam_r (const char *name, struct passwd *p, char *buffer
 
 <hr>
 
-::: {style="font-size: 150%;"}
 ![](/src/images/nss-arch.png){fig-align="center" #fig-nss-arch width=62%}
-:::
 
 ## {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
 

@@ -80,7 +80,13 @@ hr {
 }
 
 .reveal .slide aside .aside-footnotes {
-    font-size: 1.1em;
+    font-size: 0.9em;
+}
+
+.reveal .slide aside, .reveal .slide div.aside {
+    position: absolute;
+    bottom: 40px;
+    font-size: 0.75em;
 }
 
 .reveal {
@@ -125,6 +131,25 @@ hr {
   .slide-number > a[href*='title-slide'] {
     display: none;
   }
+}
+
+.slide-number, .reveal.has-logo .slide-number {
+  bottom: 14px !important;
+  right: 20px !important;
+  top: unset !important;
+}
+
+.reveal .slide-logo {
+  display: block;
+  position: fixed;
+  bottom: unset !important;
+  left: unset !important;
+  top: 15px;
+  right: 12px;
+  height: 100px !important;
+  width: 145px !important;
+  max-width: unset !important;
+  max-height: unset !important;
 }
 
 .table-grid {

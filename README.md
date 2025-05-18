@@ -27,6 +27,27 @@ podman kube play quarto-preview.yaml --down
 podman pod logs quarto-preview
 ```
 
+### Export to PDF
+
+```
+podman run \
+    --name pdf-export \
+    -u root \
+    --rm \
+    -v $(pwd)/pdf:/slides:Z \
+    -ti \
+    --net host \
+    ghcr.io/astefanutti/decktape \
+        reveal \
+        --fragments=true \
+        http://localhost:6411/ \
+        refine-the-break-glass.pdf
+```
+
+## References
+
+- [Export to PDF](https://github.com/astefanutti/decktape)
+
 ## `License`
 
 The code for the website is licensed under a

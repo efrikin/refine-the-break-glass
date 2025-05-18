@@ -6,12 +6,13 @@
 
 <br>
 
-::: {style="font-size: 150%;"}
-```{mermaid}
-%%| fig-align: center
-%%| file: /src/diagrams/03-ssh-stack-protocols.mmd
-```
-:::
+<!-- ```{mermaid} -->
+<!-- %%| fig-align: center -->
+<!-- %%| file: /src/diagrams/03-ssh-stack-protocols.mmd -->
+<!-- ``` -->
+
+<!-- https://github.com/astefanutti/decktape/issues/328 -->
+![](/src/images/03-ssh-stack-protocols.svg)
 
 ::: {.custom-smaller}
 [SSH User Authentication:]{style="color:#d7bde2;"} for client authentication to
@@ -42,7 +43,7 @@ For more details please read:
 [RFC4252: Authentication Requests](https://datatracker.ietf.org/doc/html/rfc4252#section-5){target="_blank_"}
 :::
 
-## Conversation between SSH and NSS[^nss] {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
+## Conversation between SSH and NSS[^nss] {background-gradient="linear-gradient(to bottom, #00192C, #004F61)" style="font-size: 96.5%;"}
 
 <hr>
 <br>
@@ -53,7 +54,7 @@ For more details please read:
 <!-- container -->
 <!-- ```{mermaid} -->
 <!-- %%| fig-align: center -->
-<!-- %%| file: /src/diagrams/04-ssh-nss.mmd -->
+<!-- %%| file: /src/images/04-ssh-nss.mmd -->
 <!-- ``` -->
 ![](/src/images/sshd-nss.svg){fig-align="center" fig-align="center"}
 
@@ -76,7 +77,7 @@ PasswordAuthentication or KbdInteractiveAuthentication.
 For more details please read: [man 5 sshd_config]{style="color:yellow;"}
 :::
 
-## Conversation between sshd, NSS and PAM[^pam-module] {background-gradient="linear-gradient(to bottom, #00192C, #004F61)" style="font-size: 80%;"}
+## Conversation between sshd, NSS and PAM[^pam-module] {background-gradient="linear-gradient(to bottom, #00192C, #004F61)" style="font-size: 96.5%;"}
 
 <hr>
 

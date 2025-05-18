@@ -23,7 +23,6 @@
 - Server-side authorization
 :::
 
-
 ::: {.fragment}
 - Independent on shared account(s) (Accountless)
 :::
@@ -39,13 +38,12 @@
 ::: {.fragment}
 - Critical component(s) rotation
 :::
-:::
-:::
 
 ::: {.fragment}
 ![](/src/images/openssh-cert-logo.svg){width=40% fig-align="center"}
 :::
 
+:::
 :::
 
 ## Main Points {background-image="themes/bg2.jpg"}
