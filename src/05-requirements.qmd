@@ -1,0 +1,59 @@
+
+# Requirements {background-image="themes/topic.jpg"}
+
+## Main Points {background-image="themes/bg2.jpg"}
+
+<hr>
+
+::: {auto-animate=true}
+
+::: {style="font-size: 80%;"}
+
+- Keyless/Passwordless
+
+::: {.fragment}
+- Based on well-known protocols
+:::
+
+::: {.fragment}
+- Independent on PAM platform
+:::
+
+::: {.fragment}
+- Server-side authorization
+:::
+
+::: {.fragment}
+- Independent on shared account(s) (Accountless)
+:::
+
+::: {.fragment}
+- Simple integration to exist infrastructure
+:::
+
+::: {.fragment}
+- Short-lived access
+:::
+
+::: {.fragment}
+- Critical component(s) rotation
+:::
+
+::: {.fragment}
+![](/src/images/openssh-cert-logo.svg){width=40% fig-align="center"}
+:::
+
+:::
+:::
+
+## Main Points {background-image="themes/bg2.jpg"}
+
+<hr>
+
+::: {auto-animate=true}
+::: {style="margin-top: 170px; font-size: 1em;"}
+- Server-side authorization
+- Independent on shared account(s) (Accountless)
+:::
+:::
+

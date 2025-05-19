@@ -1,0 +1,41 @@
+# Background {background-image="themes/topic.jpg"}
+
+## Privileged Access Management Architecture {background-gradient="linear-gradient(to bottom, #00192C, #004F61)" style="font-size: 90%;"}
+
+<hr>
+
+<br>
+<br>
+
+<!-- https://github.com/quarto-dev/quarto-cli/issues/3973 -->
+<!-- https://github.com/astefanutti/decktape/issues/328 -->
+<!-- ```{mermaid} -->
+<!-- %%| fig-align: center -->
+<!-- %%| file: /src/diagrams/01-pam-arch.mmd -->
+<!-- ``` -->
+
+![](/src/images/01-pam-arch.svg)
+
+## Privileged Access Management Architecture {background-gradient="linear-gradient(to bottom, #00193C, #004F61)" style="font-size: 90%;"}
+
+<hr>
+
+<br>
+<br>
+
+<!-- ```{mermaid} -->
+<!-- %%| fig-align: center -->
+<!-- %%| file: /src/diagrams/02-pam-arch.mmd -->
+<!-- ``` -->
+
+<!-- https://github.com/astefanutti/decktape/issues/328 -->
+![](/src/images/02-pam-arch.svg)
+
+## SSH Architectrure {background-gradient="linear-gradient(to bottom, #00192C, #004F61)" style="font-size:90%;"}
+
+<hr>
+
+<br>
+
+![](/src/images/ssh-arch.png){width=75% fig-align="center"}
+

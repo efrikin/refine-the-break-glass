@@ -1,0 +1,12 @@
+.Rproj.user
+.Rhistory
+.Rdata
+.httr-oauth
+.DS_Store
+.quarto
+pdf/*.pdf
+
+/.quarto/
+*.quarto_ipynb
+_site/
+

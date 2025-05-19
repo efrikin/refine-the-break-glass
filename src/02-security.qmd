@@ -1,0 +1,59 @@
+## Comparison Criteria {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
+
+<hr>
+
+::: table-grid
+::: {style="font-size: 99%;"}
+| Access Provision Method | Security Level                            | Implementation Complexity       | Ease of Use                      | Flexebility                      | Audit Transperency             | Abuse Risk                       |
+|:-----------------------:|:-----------------------------------------:|:-------------------------------:|:--------------------------------:|:--------------------------------:|:------------------------------:|:--------------------------------:|
+| Emergency account       | [Medium]{style="color:yellow;"}           | [Low]{style="color:green;"}     | [High]{style="color:red;"}       | [Low]{style="color:green;"}      | [Medium]{style="color:yellow;"}| [High]{style="color:red;"}       |
+| Temporary Token/Keys    | [High]{style="color:red;"}                | [Medium]{style="color:yellow;"} | [High]{style="color:red;"}       | [High]{style="color:red;"}       | [High]{style="color:red;"}     | [Low]{style="color:green;"}      |
+| Temporary Roles         | [High]{style="color:red;"}                | [Medium]{style="color:yellow;"} | [Medium]{style="color:yellow;"}  | [High]{style="color:red;"}       | [High]{style="color:red;"}     | [Low]{style="color:green;"}      |
+| MFA Unlock              | [Very High]{style="color:red;"}           | [High]{style="color:red;"}      | [Medium]{style="color:yellow;"}  | [Medium]{style="color:yellow;"}  | [High]{style="color:red;"}     | [Low]{style="color:green;"}      |
+| Approval-Based Access   | [High]{style="color:red;"}                | [High]{style="color:red;"}      | [Low]{style="color:green;"}      | [High]{style="color:red;"}       | [Very High]{style="color:red;"}| [Very Low]{style="color:green;"} |
+
+: {tbl-colwidths="[100,40]"}
+:::
+:::
+
+## Vulnerabilities {background-image="themes/bg2.jpg"}
+
+<hr>
+
+- Weak access control
+
+::: {.fragment}
+- Inadequate monitoring
+:::
+
+::: {.fragment}
+- Single Point of Failure (SPOF)
+:::
+
+::: {.fragment}
+- Security policies in Multi-Cloud environments
+:::
+
+## {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
+
+<br>
+
+![](/src/images/bg-spof.png)
+
+## SPOF: When PAM tools fail {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
+
+<hr>
+
+<br>
+
+> This vulnerability involved improper management of SSH keys within PAM
+systems, which hackers exploited to gain access to cryptographic key pairs and
+enterprise servers. The failure to secure SSH keys effectively demonstrates how
+mismanagement can lead to significant security breaches -- CVE-2024-31497
+
+> ManageEngine PAM360 Vulnerability: A specific vulnerability in ManageEngine's
+PAM360 allowed attackers to bypass authentication checks, granting them
+unauthorized access to sensitive operations within the application. This
+incident illustrates how flaws in PAM tools can create serious security risks
+if not addressed promptly -- CVE-2024-30051
+

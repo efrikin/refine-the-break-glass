@@ -1,0 +1,55 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '23px'}}}%%
+block-beta
+    columns 5
+    %% block:lr_access_desc:5
+    %%     id1("Access Layer")
+    %% end
+    block:lr_access:5
+        columns 3
+        users["Users"]
+        sa["Service Accounts"]
+        apps["Applications"]
+    end
+    %% block:lr_core_desc:5
+    %%     id2("PAM Core Layer")
+    %% end
+    block:lr_core:5
+        columns 3
+        authN["Authentification"]
+        authZ["Authorization"]
+        monitoring["Monitoring"]
+        policy["Policy Management"]
+        password["Password Vault"]
+        session["Session Management"]
+    end
+    %% block:lr_res_desc:5
+    %%     id3("Protected Resources Layer")
+    %% end
+    block:lr_res:5
+        hosts["Hosts"]
+        columns 4
+        kubernetes["Kubernetes"]
+        apps2["Applications"]
+        db["DB(s)"]
+    end
+
+    %% style id1 fill:#fe4f51,stroke-width:0px
+    style lr_access fill:#fe4f51, stroke-width:0px
+    style users fill:#f8f8f8,stroke-width:0px
+    style sa fill:#f8f8f8,stroke-width:0px
+    style apps fill:#f8f8f8,stroke-width:0px
+    %% style id2 fill:#fec701,stroke-width:0px
+    style lr_core fill:#fec701, stroke-width:0px
+    style authN fill:#f8f8f8,stroke-width:0px
+    style authZ fill:#f8f8f8,stroke-width:0px
+    style monitoring fill:#f8f8f8,stroke-width:0px
+    style policy fill:#f8f8f8,stroke-width:0px
+    style password fill:#f8f8f8,stroke-width:0px
+    style session fill:#f8f8f8,stroke-width:0px
+    %% style id3 fill:#5dca36,stroke-width:0px
+    style lr_res fill:#5dca36, stroke-width:0px
+    style hosts fill:#f8f8f8,stroke-width:0px
+    style kubernetes fill:#f8f8f8,stroke-width:0px
+    style apps2 fill:#f8f8f8,stroke-width:0px
+    style db fill:#f8f8f8,stroke-width:0px
+

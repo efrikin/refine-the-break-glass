@@ -1,0 +1,15 @@
+## Copyright Permission {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
+
+<hr>
+
+@fig-trojan: [`SpangeBob`](https://www.freeiconspng.com/img/44217)`,`
+[`SSH terminal`](https://www.kolide.com/features/device-inventory/properties/device-user-ssh-keys)`,`
+[`Trojan horse`](https://br.pinterest.com/pin/326651779245504988/)
+
+@fig-sshd-pam-nss-meme: [`Kid Passing Note`](https://knowyourmeme.com/photos/1868040-quiz-kid-kid-passing-note)
+
+@fig-polp-meme: [`When devs don’t have access to production`](https://programmerhumor.io/testing-memes/when-devs-dont-have-access-to-production/)
+
+@sec-bg-is: [`Break-Glass Key`](https://www.herbertwilliams.com/abs-key-box-break-glass-for-key.html)
+
+@sec-orator: [`Demosthenes`](https://www.radiofrance.fr/franceculture/podcasts/les-quadrithemes-de-charles-dantzig/comment-engueuler-son-politicien-demosthene-et-churchill-ou-engueulons-les-peuples-8086465)

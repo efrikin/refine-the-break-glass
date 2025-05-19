@@ -1,0 +1,88 @@
+# What is «Break-Glass» {background-image="themes/topic.jpg"}
+
+## Break-Glass is ... {background-gradient="linear-gradient(to bottom, #00192C, #004F61)" #sec-bg-is}
+
+<hr>
+
+<br>
+
+>Break-glass access refers to a procedure used in critical emergencies or
+exceptional cases, when a user with insufficient access is granted elevated
+access rights to bypass normal access controls. -- SSH Academy (ssh.com)
+
+![](/src/images/break-glass.png){width=25% fig-align="center"}
+
+:::aside
+For more details please read
+[What is Break-Glass Access?](https://www.ssh.com/academy/secrets-management/what-is-break-glass-access){target=_blank_}
+:::
+
+## Usage {background-gradient="linear-gradient(to bottom, #00192C, #004F61)"}
+
+<hr>
+<br>
+
+:::: {layout="[ 60, 40 ]"}
+
+::::: {#first-column}
+
+:::::: {.custom-smaller}
+
+![](/src/images/bg-emergency.png){width="90%"}
+
+::::::
+
+:::::
+
+::::: {#second-column}
+
+::::::{.custom-smaller}
+
+Emergency:
+
+- PAM/IAM[^pamiam] do not work
+
+::: {.fragment}
+- Server is down \
+  (DDoS or MFA doesn't work)
+:::
+
+::: {.fragment}
+- Failure of Federation Server
+:::
+
+::: {.fragment}
+- Service outage
+:::
+
+::::::
+:::::
+::::
+
+[^pamiam]: Privileged Access Management/Identity and Access Management
+
+## Classification {background-image="themes/bg2.jpg"}
+
+<hr>
+
+- Emergency Access Account \
+  (MS Azure, AWS, IAM)
+
+:::{.fragment}
+- Temporary Tokens/Keys \
+  (HashiCorp Vault)
+:::
+
+:::{.fragment}
+- Temporary Roles
+:::
+
+:::{.fragment}
+- MFA Unlock
+:::
+
+:::{.fragment}
+- Approval-Based Access \
+  (ServiceNow)
+:::
+

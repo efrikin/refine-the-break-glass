@@ -1,0 +1,31 @@
+project:
+  type: website
+  preview:
+    host: 0.0.0.0
+    port: 6411
+format:
+  revealjs:
+    progress: false
+    slide-number: true
+    mermaid:
+      theme: dark
+    theme:
+      - default
+      - themes/custom.scss
+    logo: themes/logo.png
+include-after: |
+  <script type="text/javascript">
+    Reveal.on('ready', event => {
+      if (event.indexh === 0) {
+        document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
+      }
+    });
+    Reveal.addEventListener('slidechanged', (event) => {
+      if (event.indexh === 1) {
+        document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
+      }
+      if (event.indexh === 2) {
+        document.querySelector("div.has-logo > img.slide-logo").style.display = null;
+      }
+    });
+  </script>

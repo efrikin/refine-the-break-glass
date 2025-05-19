@@ -1,0 +1,28 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: quarto
+spec:
+  terminationGracePeriodSeconds: 1
+  containers:
+    - name: preview
+      image: ghcr.io/quarto-dev/quarto:1.8.7
+      command:
+        # - sleep
+        # - infinity
+        - quarto
+        - preview
+      workingDir: /srv
+      ports:
+        - containerPort: 6411
+          hostPort: 6411
+      volumeMounts:
+        - name: source
+          mountPath: /srv:Z
+  volumes:
+    - name: source
+      hostPath:
+        path: ./
+        type: Directory
+

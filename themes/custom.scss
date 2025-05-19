@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400..900&display=swap');
+
+$colors: (
+  "white": #FFFFFF,
+  "black": #111111,
+  "teal": #27F7F7,
+  "blue": #3976B3,
+  "red": red,
+  "green": green,
+  "yellow": yellow
+);
+
+/*-- scss:functions --*/
+
+@function theme-color($color) {
+  @return map-get($colors, $color);
+}
+
+/*-- scss:defaults --*/
+
+$body-bg: theme-color("black");
+$body-color: theme-color("white");
+$link-color: theme-color("yellow");
+$blue-color: theme-color("blue");
+$red-color: theme-color("red");
+
+$font-family-sans-serif: "Montserrat", monaco, monospace;
+$presentation-font-size-root: 30px !default;
+
+/*-- scss:rules --*/
+
+hr {
+  border: 1px solid $red-color;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#title-slide {
+  .title {
+    font-size: 2.3em;
+    color: theme-color("white");
+    text-align: left;
+
+  }
+
+  .subtitle {
+    font-size: 1.2em;
+    color: theme-color("red");
+    text-align: left;
+    bottom: unset !important;
+    right: unset !important;
+    top: 5px;
+    left: 12px;
+  }
+
+  .quarto-title-author {
+    font-size: 1.5em;
+    color: theme-color("white");
+  }
+
+  .date {
+    font-size: 1.0em;
+    text-align: left;
+  }
+
+}
+
+.orbitron {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: theme-color("white");
+}
+
+.reveal.smaller .slides section section.smallest {
+  font-size: 3.7em;
+}
+
+.reveal section div.center-h {
+  text-align: justify;
+}
+
+.reveal .slide aside .aside-footnotes {
+    font-size: 0.9em;
+}
+
+.reveal .slide aside, .reveal .slide div.aside {
+    position: absolute;
+    bottom: 40px;
+    font-size: 0.75em;
+}
+
+.reveal {
+  h1,
+  h2 {
+    color: theme-color("white");
+    font-family: "Montserrat", sans-serif;
+  }
+
+  p.caption {
+    display: none;
+
+  }
+
+  blockquote {
+    color: theme-color("white");
+    border-color: theme-color("red");
+    font-style: italic !important;
+  }
+
+  .slide-menu-button {
+    display: none !important;
+  }
+
+  .reveal ul,
+  .reveal ol,
+  .reveal li {
+    margin-left: 6vw;
+    text-indent: 0em;
+    padding-left: 0.5em;
+    padding-right: 6vw;
+    margin-top: 0.1em !important;
+    margin-bottom: 0.1em !important;
+    font-size: 0.9em;
+    list-style-type: circle;
+  }
+
+  ul li::marker{
+    color: red;
+  }
+
+  .slide-number > a[href*='title-slide'] {
+    display: none;
+  }
+}
+
+.slide-number, .reveal.has-logo .slide-number {
+  bottom: 14px !important;
+  right: 20px !important;
+  top: unset !important;
+}
+
+.reveal .slide-logo {
+  display: block;
+  position: fixed;
+  bottom: unset !important;
+  left: unset !important;
+  top: 15px;
+  right: 12px;
+  height: 100px !important;
+  width: 145px !important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
+
+.table-grid {
+   font-family: Space Mono;
+   font-size: 17pt;
+   position: relative;
+   top: 110px;
+   left: 10px;
+}
+
+.custom-smaller {
+  font-size: 0.85em
+}
+
+.qr-smaller {
+  font-size: 0.55em
+}
+
+figcaption {
+    text-align: center;
+}
+
+.caption {
+   text-align: center;
+}
+
+.center-xy {
+  margin: 0;
+  position: absolute;
+  left: 22%;
+}
+
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color;
+  }
+
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}
+
